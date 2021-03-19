@@ -1,6 +1,14 @@
+import { Search } from '@material-ui/icons';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Nav, NavbarContainer, NavList } from './Header.styled';
+import {
+  Nav,
+  NavbarContainer,
+  NavList,
+  NavSearchFirst,
+  NavSearchSecond,
+} from './Header.styled';
+
 // !meetup logo https://findvectorlogo.com/wp-content/uploads/2019/07/meetup-vector-logo.png
 const Header = () => {
   const history = useHistory();
@@ -8,25 +16,36 @@ const Header = () => {
     <>
       <NavbarContainer>
         <Nav>
-          <a href="https://findvectorlogo.com/wp-content/uploads/2019/07/meetup-vector-logo.png">
-            Meetup
-          </a>
+          <img
+            src="https://findvectorlogo.com/wp-content/uploads/2019/07/meetup-vector-logo.png"
+            alt=""
+          />
           <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+            <NavSearchFirst>
+              <input
+                type="search"
+                placeholder="Search for keyboards"
+                aria-label="Search"
+              />
+            </NavSearchFirst>
+            <NavSearchSecond>
+              <input
+                type="search"
+                placeholder="Gharonda, IN"
+                aria-label="Search"
+              />
+            </NavSearchSecond>
+            <button type="submit">
+              <Search />
             </button>
           </form>
         </Nav>
         <NavList>
           <ul>
             <li>
-              <a href="/">Start a new group</a>
+              <a className="active" href="/">
+                Start a new group
+              </a>
             </li>
             <li>
               <a href="/">Log In</a>
