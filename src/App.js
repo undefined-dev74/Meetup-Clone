@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React from 'react';
-import Header from './parts/Header';
+import Header from './parts/Header/Header';
 import Events from './pages/Events';
 import Groups from './pages/Groups';
 import './App.scss';
