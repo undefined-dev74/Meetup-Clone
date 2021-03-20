@@ -11,7 +11,8 @@ function App() {
       <Router>
         <React.Fragment>
           <div className="container-fluid ">
-            <Header />
+            {/* <Header /> */}
+            <Events />
             <Switch>
               <Route path="/" exact />
               <Route path="/events" component={Events} />

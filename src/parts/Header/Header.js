@@ -56,9 +56,9 @@ const Header = () => {
           </ul>
         </NavList>
       </NavbarContainer>
-      <button onClick={() => history.push('/events')}>Events</button>
+      {/* <button onClick={() => history.push('/events')}>Events</button>
 
-      <button onClick={() => history.push('/groups')}>Groups</button>
+      <button onClick={() => history.push('/groups')}>Groups</button> */}
     </>
   );
 };

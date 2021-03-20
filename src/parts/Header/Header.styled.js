@@ -98,8 +98,8 @@ const NavSearchSecond = styled.div`
     padding: 8px 16px;
     
     ::placeholder {
-        color: #000000;
-        font-weight:600;
+        color: #1e212d;
+        font-weight:500;
     }
 
     :hover {
