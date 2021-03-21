@@ -1,11 +1,11 @@
-import { ExpandMore } from '@material-ui/icons';
-import React from 'react';
+import { ExpandMore } from "@material-ui/icons";
+import React from "react";
 import {
   EventContainer,
   EventHeading,
   EventNav,
   EventOptions,
-} from './Event.style';
+} from "./Event.style";
 
 const Events = () => {
   return (
